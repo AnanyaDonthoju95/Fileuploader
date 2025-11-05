@@ -74,6 +74,7 @@ form.addEventListener("submit", async (e) => {
           <a href="${data.url}" target="_blank">${data.url}</a>
         `;
       } else {
+        console.log("File size too large",xhr.statusText)
         resultDiv.innerHTML = `❌ Error: ${xhr.statusText}`;
       }
       progressContainer.style.display = "none";
