@@ -57,7 +57,7 @@ form.addEventListener("submit", async (e) => {
 
   try {
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://127.0.0.1:5000/upload", true);
+    xhr.open("POST", "https://fileuploader-bvid.onrender.com/upload", true);
 
     xhr.upload.onprogress = (event) => {
       if (event.lengthComputable) {
