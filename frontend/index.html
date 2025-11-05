@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ananya Cloud Uploader 🌤️</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <h1>☁️ Ananya Cloud File Uploader</h1>
+      <p>Upload files securely to AWS S3</p>
+
+      <form id="uploadForm">
+        <div class="file-box" id="fileBox">
+          <input type="file" id="fileInput" hidden />
+          <p>Drag & Drop your file here <br> or <span id="browseText">browse</span></p>
+        </div>
+
+        <!-- Only filename will appear here -->
+        <p id="fileName" class="file-name"></p>
+
+        <button type="submit" id="uploadBtn">Upload</button>
+      </form>
+
+      <div class="progress-container" id="progressContainer" style="display:none;">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

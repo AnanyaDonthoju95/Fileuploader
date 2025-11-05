@@ -1,0 +1,122 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 40px 50px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  width: 420px;
+  animation: fadeIn 1s ease;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #dcdcdc;
+}
+
+.file-box {
+  border: 2px dashed rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  padding: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.file-box:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#browseText {
+  color: #00ffcc;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.file-name {
+  margin-top: 10px;
+  color: #00ffcc;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#previewContainer {
+  margin-top: 10px;
+}
+
+#previewContainer img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button {
+  margin-top: 20px;
+  background-color: #00ffcc;
+  color: #222;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #00e6b8;
+}
+
+.progress-container {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  height: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+  display: none;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #00ffcc;
+  transition: width 0.3s ease;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #fff;
+  word-break: break-all;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
