@@ -75,7 +75,7 @@ form.addEventListener("submit", async (e) => {
         `;
       } else {
         console.log("File size too large",xhr.statusText)
-        resultDiv.innerHTML = `❌ Error: ${xhr.statusText}`;
+        resultDiv.innerHTML = `❌ Error:File limit exceeded(max size 5MB)`;
       }
       progressContainer.style.display = "none";
     };
